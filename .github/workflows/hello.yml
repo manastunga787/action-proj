@@ -15,11 +15,11 @@ jobs:
   #   - name: Print date in windows
   #     run: Get-Date
 
-  print-date-in-mocos:
-  runs-on: macos-latest
-  steps:
-    - name: Print date in macOS
-      run: date
+  # print-date-in-mocos:
+  # runs-on: macos-latest
+  # steps:
+  #   - name: Print date in macOS
+  #     run: date
 
   # print-done:
   # runs-on: ubuntu-latest
