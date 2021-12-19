@@ -1,0 +1,36 @@
+on:
+  push:
+    branches:
+      - master
+job:
+  print-date-in-ubuntu:
+  runs-on: ubuntu-latest
+  steps:
+    - name: Print date in ubuntu
+      run: date
+
+job:  
+  print-date-in-window:
+  runs-on: windows-latest
+  steps:
+    - name: Print date in windows
+      run: Get-Date
+
+job:  
+  print-date-in-mocos:
+  runs-on: macos-latest
+  steps:
+    - name: Print date in macOS
+      run: date
+
+
+job:
+  print-done:
+  runs-on: ubuntu-latest
+  needs: ["print-date-in-ubuntu","print-date-in-window","print-date-in-mocos"]
+  steps:
+    - name: Printing done
+      run: echo done!!
+
+  
+     
