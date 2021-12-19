@@ -1,4 +1,5 @@
 name: Printing Dates
+#declaring workspace env variable
 env:
   MY_NAME: 'manas tunga'
 on:
@@ -9,6 +10,9 @@ on:
 jobs:
   print-date-in-ubuntu:
     runs-on: ubuntu-latest
+    #declaring workflow level env variable that will overide the workspace variabel MY_NAME
+    env:
+      MY_NAME: "Hurray !!!"
     steps:
       - name: print MY_NAME
         run: |
