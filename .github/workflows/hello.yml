@@ -6,8 +6,12 @@ on:
 
 jobs:
   print-date-in-ubuntu:
+    env: 
+      MY_NAME: "manas tunga"
     runs-on: ubuntu-latest
     steps:
+      - name: print MY_NAME
+        run: echo ${{ MY_NAME }}
       - name: print date in ubuntu
         run: date
 
