@@ -2,7 +2,7 @@ name: Printing Dates
 on: [push]
 
 jobs:
-  run-shell-command:
+  print-date-in-ubuntu:
     runs-on: ubuntu-latest
     steps:
       - name: echo a hello
