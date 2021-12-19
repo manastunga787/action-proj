@@ -13,7 +13,7 @@ jobs:
       - name: print MY_NAME
         run: |
         echo "accessing enviromental variable using shell syntax"
-        echo "MY_NAM is $MY_NAME"
+
       - name: print date in ubuntu
         run: date
 
