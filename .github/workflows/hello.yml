@@ -17,9 +17,9 @@ jobs:
 
   print-date-in-mocos:
     runs-on: macos-latest
-      steps:
-        - name: Print date in macOS
-          run: date
+    steps:
+      - name: Print date in macOS
+        run: date
 
   print-done:
     runs-on: ubuntu-latest
