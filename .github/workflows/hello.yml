@@ -1,12 +1,13 @@
-name: Printing Dates
+name: shell command
 on: [push]
 
 jobs:
-  print-date-in-ubuntu:
+  run-shell-command:
   runs-on: ubuntu-latest
   steps:
-    - name: Print date in ubuntu
-      run: date
+    - name: echo a hello
+      run: echo "hello Manas"
+
 
   # print-date-in-window:
   # runs-on: windows-latest
