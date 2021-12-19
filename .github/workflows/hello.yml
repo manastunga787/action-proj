@@ -11,7 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print MY_NAME
-        run: echo "accessing enviromental variable using shell syntax"
+        run: |
+          echo "accessing enviromental variable using shell syntax"
+          echo "my name is $MY_NAME"
 
       - name: print date in ubuntu
         run: date
