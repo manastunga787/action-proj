@@ -1,7 +1,9 @@
+name: Printing Dates
 on:
   push:
     branches:
       - master
+      
 jobs:
   print-date-in-ubuntu:
   runs-on: ubuntu-latest
