@@ -19,7 +19,7 @@ jobs:
           echo "accessing enviromental variable using shell syntax"
           echo "my name is $MY_NAME"
           echo "printing variable using yml syntax"
-          echo "my name is ${{ MY_NAME }}"
+          echo "my name is ${{ env.MY_NAME }}"
 
       - name: print date in ubuntu
         run: date
