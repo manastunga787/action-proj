@@ -5,8 +5,8 @@ jobs:
   print-date-in-ubuntu:
     runs-on: ubuntu-latest
     steps:
-      - name: echo a hello
-        run: echo "hello Manas"
+      - name: print date in ubuntu
+        run: date
 
 
   print-date-in-window:
